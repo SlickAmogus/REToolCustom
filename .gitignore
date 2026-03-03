@@ -1,0 +1,39 @@
+# Build output
+x64/
+PAKtool/x64/
+PAKtool/REtool/
+*.obj
+*.pdb
+*.iobj
+*.ipdb
+*.tlog
+*.log
+*.lastbuildstate
+*.idb
+*.ilk
+*.exp
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+
+# Test files
+*.pak
+*.dds
+*.png
+
+# Binaries in bin/ (keep batch files and docs)
+bin/*.exe
+bin/*.dll
+bin/*.tex.*
+
+# zstd build artifacts (keep only x64_Release and x64_Debug libs)
+source/zstd/bin/Win32_Debug/
+source/zstd/bin/Win32_Release/
+source/zstd/dll/

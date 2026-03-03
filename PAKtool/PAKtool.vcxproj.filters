@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\libdeflate">
+      <UniqueIdentifier>{0edd4882-1c35-4b0d-9612-16891042f72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zstd">
+      <UniqueIdentifier>{531e9995-ce03-420f-a4a8-2d1bbe02e4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TEX">
+      <UniqueIdentifier>{3b2072c5-d001-433f-bda2-3a3ac6add6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MurmurHash3">
+      <UniqueIdentifier>{f070d223-084e-430e-b85a-dcb5cf1292dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lizard">
+      <UniqueIdentifier>{534235b3-96d4-41df-9bb2-1362b31bc21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hash">
+      <UniqueIdentifier>{de00baba-75d0-4ab0-857a-ef1227e85376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MHRDecrypt">
+      <UniqueIdentifier>{903f7561-294c-4671-a738-bae912c71520}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\dir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\extract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\hashlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PAKFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\replace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\adler32.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\aligned_malloc.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\crc32.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\deflate_compress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\deflate_decompress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\gzip_compress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\gzip_decompress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\x86_cpu_features.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\zlib_compress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\libdeflate\zlib_decompress.c">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MurmurHash3\MurmurHash3.cpp">
+      <Filter>Source Files\MurmurHash3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TEX\DDSHeaderDefaults.cpp">
+      <Filter>Source Files\TEX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TEX\DDStoTEX.cpp">
+      <Filter>Source Files\TEX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TEX\TEXtoDDS.cpp">
+      <Filter>Source Files\TEX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\retool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TEX\TEXmisc.cpp">
+      <Filter>Source Files\TEX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Create.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Lizard\lizard_compress.c">
+      <Filter>Source Files\Lizard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Lizard\lizard_decompress.c">
+      <Filter>Source Files\Lizard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Lizard\lizard_frame.c">
+      <Filter>Source Files\Lizard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Hash\sha3.cpp">
+      <Filter>Source Files\Hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TEX\DDSmisc.cpp">
+      <Filter>Source Files\TEX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\dir.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\extract.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\hashlist.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\misc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\pakformat.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PAKFunctions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\replace.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\adler32_impl.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\aligned_malloc.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\bt_matchfinder.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\common_defs.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\compiler_gcc.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\compiler_msc.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\crc32_impl.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\crc32_table.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\decompress_impl.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\deflate_compress.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\deflate_constants.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\gzip_constants.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\hc_matchfinder.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\lib_common.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\libdeflate.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\matchfinder_avx2.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\matchfinder_common.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\matchfinder_neon.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\matchfinder_sse2.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\stdint.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\unaligned.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\x86_cpu_features.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\libdeflate\zlib_constants.h">
+      <Filter>Source Files\libdeflate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MurmurHash3\MurmurHash3.h">
+      <Filter>Source Files\MurmurHash3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\DDSHeaderDefaults.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\DDSInfo.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\DDStoTEX.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\tex.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\TEXtoDDS.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\zstd\zstd.h">
+      <Filter>Source Files\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\retool.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\TEXmisc.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Create.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_common.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_compress.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_compress_liz.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_compress_lz4.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_decompress.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_decompress_liz.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_decompress_lz4.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_frame.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_frame_static.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_fast.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_fastbig.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_fastsmall.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_hashchain.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_lowestprice.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_nochain.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_optimal.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Lizard\lizard_parser_pricefast.h">
+      <Filter>Source Files\Lizard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Hash\sha3.h">
+      <Filter>Source Files\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TEX\DDSmisc.h">
+      <Filter>Source Files\TEX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\libdeflate\COPYING">
+      <Filter>Source Files\libdeflate</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="REtool.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="..\source\MHRDecrypt\mhr_pak_decrypt_algo.asm">
+      <Filter>Source Files\MHRDecrypt</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

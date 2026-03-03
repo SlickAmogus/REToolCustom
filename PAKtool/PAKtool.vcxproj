@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1CAD9DAF-F916-4170-A88B-E2E9FBC58697}</ProjectGuid>
+    <RootNamespace>PAKtool</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <ProjectName>REtool</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AdditionalOptions>/wd4146 /wd4703</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/wd4146 /wd4703</AdditionalOptions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Create.cpp" />
+    <ClCompile Include="..\source\dir.cpp" />
+    <ClCompile Include="..\source\extract.cpp" />
+    <ClCompile Include="..\source\hashlist.cpp" />
+    <ClCompile Include="..\source\Hash\sha3.cpp" />
+    <ClCompile Include="..\source\libdeflate\adler32.c" />
+    <ClCompile Include="..\source\libdeflate\aligned_malloc.c" />
+    <ClCompile Include="..\source\libdeflate\crc32.c" />
+    <ClCompile Include="..\source\libdeflate\deflate_compress.c" />
+    <ClCompile Include="..\source\libdeflate\deflate_decompress.c" />
+    <ClCompile Include="..\source\libdeflate\gzip_compress.c" />
+    <ClCompile Include="..\source\libdeflate\gzip_decompress.c" />
+    <ClCompile Include="..\source\libdeflate\x86_cpu_features.c" />
+    <ClCompile Include="..\source\libdeflate\zlib_compress.c" />
+    <ClCompile Include="..\source\libdeflate\zlib_decompress.c" />
+    <!-- Lizard sources removed - not present in this build -->
+    <!--<ClCompile Include="..\source\Lizard\lizard_compress.c" />-->
+    <!--<ClCompile Include="..\source\Lizard\lizard_decompress.c" />-->
+    <!--<ClCompile Include="..\source\Lizard\lizard_frame.c" />-->
+    <ClCompile Include="..\source\misc.cpp" />
+    <ClCompile Include="..\source\MurmurHash3\MurmurHash3.cpp" />
+    <ClCompile Include="..\source\PAKFunctions.cpp" />
+    <ClCompile Include="..\source\replace.cpp" />
+    <ClCompile Include="..\source\retool.cpp" />
+    <ClCompile Include="..\source\TEX\DDSHeaderDefaults.cpp" />
+    <ClCompile Include="..\source\TEX\DDSmisc.cpp" />
+    <ClCompile Include="..\source\TEX\DDStoTEX.cpp" />
+    <ClCompile Include="..\source\TEX\gdeflate.cpp" />
+    <ClCompile Include="..\source\TEX\TEXmisc.cpp" />
+    <ClCompile Include="..\source\TEX\TEXtoDDS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Create.h" />
+    <ClInclude Include="..\source\dir.h" />
+    <ClInclude Include="..\source\extract.h" />
+    <ClInclude Include="..\source\hashlist.h" />
+    <ClInclude Include="..\source\Hash\sha3.h" />
+    <ClInclude Include="..\source\libdeflate\adler32_impl.h" />
+    <ClInclude Include="..\source\libdeflate\aligned_malloc.h" />
+    <ClInclude Include="..\source\libdeflate\bt_matchfinder.h" />
+    <ClInclude Include="..\source\libdeflate\common_defs.h" />
+    <ClInclude Include="..\source\libdeflate\compiler_gcc.h" />
+    <ClInclude Include="..\source\libdeflate\compiler_msc.h" />
+    <ClInclude Include="..\source\libdeflate\crc32_impl.h" />
+    <ClInclude Include="..\source\libdeflate\crc32_table.h" />
+    <ClInclude Include="..\source\libdeflate\decompress_impl.h" />
+    <ClInclude Include="..\source\libdeflate\deflate_compress.h" />
+    <ClInclude Include="..\source\libdeflate\deflate_constants.h" />
+    <ClInclude Include="..\source\libdeflate\gzip_constants.h" />
+    <ClInclude Include="..\source\libdeflate\hc_matchfinder.h" />
+    <ClInclude Include="..\source\libdeflate\libdeflate.h" />
+    <ClInclude Include="..\source\libdeflate\lib_common.h" />
+    <ClInclude Include="..\source\libdeflate\matchfinder_avx2.h" />
+    <ClInclude Include="..\source\libdeflate\matchfinder_common.h" />
+    <ClInclude Include="..\source\libdeflate\matchfinder_neon.h" />
+    <ClInclude Include="..\source\libdeflate\matchfinder_sse2.h" />
+    <ClInclude Include="..\source\libdeflate\stdint.h" />
+    <ClInclude Include="..\source\libdeflate\unaligned.h" />
+    <ClInclude Include="..\source\libdeflate\x86_cpu_features.h" />
+    <ClInclude Include="..\source\libdeflate\zlib_constants.h" />
+    <ClInclude Include="..\source\Lizard\lizard_common.h" />
+    <ClInclude Include="..\source\Lizard\lizard_compress.h" />
+    <ClInclude Include="..\source\Lizard\lizard_compress_liz.h" />
+    <ClInclude Include="..\source\Lizard\lizard_compress_lz4.h" />
+    <ClInclude Include="..\source\Lizard\lizard_decompress.h" />
+    <ClInclude Include="..\source\Lizard\lizard_decompress_liz.h" />
+    <ClInclude Include="..\source\Lizard\lizard_decompress_lz4.h" />
+    <ClInclude Include="..\source\Lizard\lizard_frame.h" />
+    <ClInclude Include="..\source\Lizard\lizard_frame_static.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_fast.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_fastbig.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_fastsmall.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_hashchain.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_lowestprice.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_nochain.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_optimal.h" />
+    <ClInclude Include="..\source\Lizard\lizard_parser_pricefast.h" />
+    <ClInclude Include="..\source\misc.h" />
+    <ClInclude Include="..\source\MurmurHash3\MurmurHash3.h" />
+    <ClInclude Include="..\source\pakformat.h" />
+    <ClInclude Include="..\source\PAKFunctions.h" />
+    <ClInclude Include="..\source\replace.h" />
+    <ClInclude Include="..\source\retool.h" />
+    <ClInclude Include="..\source\TEX\DDSHeaderDefaults.h" />
+    <ClInclude Include="..\source\TEX\DDSInfo.h" />
+    <ClInclude Include="..\source\TEX\DDSmisc.h" />
+    <ClInclude Include="..\source\TEX\DDStoTEX.h" />
+    <ClInclude Include="..\source\TEX\gdeflate.h" />
+    <ClInclude Include="..\source\TEX\TEXmisc.h" />
+    <ClInclude Include="..\source\TEX\tex.h" />
+    <ClInclude Include="..\source\TEX\TEXtoDDS.h" />
+    <ClInclude Include="..\source\zstd\zstd.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\libdeflate\COPYING" />
+    <MASM Include="..\source\MHRDecrypt\mhr_pak_decrypt_algo.asm">
+      <FileType>Document</FileType>
+    </MASM>
+  </ItemGroup>
+  <!-- Resource compile disabled - icon path fix not needed for build -->
+  <!--<ItemGroup>
+    <ResourceCompile Include="REtool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\icon1.ico" />
+  </ItemGroup>-->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
