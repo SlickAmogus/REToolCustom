@@ -20,7 +20,7 @@ Originally created by [FluffyQuack](https://www.youtube.com/user/FluffyQuack). T
 ### Extract a PAK
 
 ```
-REtool.exe Stars_shirt_grace.pak
+REtool.exe example.pak
 ```
 
 The tool auto-detects PAK files and extracts them. If the PAK contains an embedded manifest, filenames are resolved automatically.
